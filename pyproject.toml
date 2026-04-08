@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "mm-custom-acquisition"
+version = "0.1.0"
+description = "Custom Micro-Manager acquisition scripts for multi-position, multi-channel, z-stack time-lapse imaging"
+requires-python = ">=3.11"
+dependencies = [
+    "pycromanager>=1.0.0",
+    "numpy<2",
+    "tifffile",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["acquisition*"]
