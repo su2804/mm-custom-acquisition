@@ -78,7 +78,7 @@ Positions           : 4  |  BF-only: [2, 3]
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/mm-custom-acquisition.git
+git clone https://github.com/su2804/mm-custom-acquisition.git
 cd mm-custom-acquisition
 
 # Create conda environment
@@ -107,7 +107,7 @@ All parameters are defined in `acquisition/config.py`:
 
 | Parameter | Description | Default |
 |---|---|---|
-| `SAVE_PATH` | Root directory for saving images | `F:\Sofia\WI25\pH\DiffpH` |
+| `SAVE_PATH` | Root directory for saving images | `path/to/your/data` |
 | `DATASET_NAME` | Subfolder name | `custom_acq` |
 | `N_TIMEPOINTS` | Number of timepoints | `5` |
 | `INTERVAL_S` | Interval between timepoints (seconds) | `180` |
