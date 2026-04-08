@@ -94,7 +94,7 @@ pip install -r requirements.txt
 1. Open Micro-Manager 2.0 and load your hardware config
 2. Set up your position list in MM
 3. Start the ZMQ server: **Plugins → Developer Tools → Start ZMQ server**
-4. Edit parameters at the top of the script (SAVE_PATH, N_TIMEPOINTS, etc.)
+4. Edit `acquisition/config.py` to set your parameters (SAVE_PATH, N_TIMEPOINTS, etc.)
 5. Run:
 
 ```bash
@@ -103,7 +103,7 @@ python scripts/run_coresnap.py
 
 ## Parameters
 
-All parameters are defined at the top of each script under `USER PARAMETERS`:
+All parameters are defined in `acquisition/config.py`:
 
 | Parameter | Description | Default |
 |---|---|---|
